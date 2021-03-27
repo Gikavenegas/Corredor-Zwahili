@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/promociones.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb3ade45b8.js" crossorigin="anonymous"></script>
+
+
+    <title>Corredor Zwahili</title>
+</head>
+<body>
+    <header>
+        <div id="Redes_header">
+            <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/corredor_zwahili-102185001140136/" target="_blank">Facebook</a></li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/corredor_zwahili/?hl=es-la" target="_blank">Instagram</a></li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/message/3SPCV7HWP227H1" target="_blank">WhatsApp</a></li>
+        </div>
+        <div id="Contenedor_menu-principal">
+            <nav id="Contenedor_menu-principal">
+                <div id="Boton-principal"><a href="index.html">Inicio</a></div>
+                <div id="Boton-principal"><a href="promociones.html">Promociones</a></div>
+                <div id="Boton-principal"><a href="productos.html">Productos</a></div>
+                <div id="Boton-principal"><a href="contacto.html">Contacto</a></div>
+                <div id="Boton-principal"><i class="fas fa-shopping-cart"></i><a href="#"></a></div>
+            </nav>    
+        </div>
+    </header>
+
+    <section id="section">
+        <div id="contenedor-videos">
+            <div id="videos-columna">
+                <div id="video-texto">Promoción en remeras</div>    
+                <div id="video"><video src="images/Video1.mp4" type="video/mp4" id="video-imagen1"></video></div>
+                <div id="video-botones">
+                    <button id="play" onclick="playPause()"><i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
+                    <button id="stop" onclick="stop()"><i class="fas fa-stop"></i></button>
+                    <button id="previous" onclick="skip(-2)"><i class="fas fa-backward"></i></button>
+                    <button id="next" onclick="skip(2)"><i class="fas fa-forward"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="Footer-Redes">
+            <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/corredor_zwahili-102185001140136/" target="_blank">Facebook</a>
+            </li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/corredor_zwahili/?hl=es-la" target="_blank">Instagram</a>
+            </li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/message/3SPCV7HWP227H1" target="_blank">WhatsApp</a>
+            </li>   
+        </div>
+        <div id="Footer-copy">
+            <p>Copyright - Todos los derechos reservados</p>
+        </div>
+    </footer>  
+	<script src="js/promociones.js" type="text/javascript"></script>
+</body>
+</html>

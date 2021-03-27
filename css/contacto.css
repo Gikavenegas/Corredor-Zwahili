@@ -1,0 +1,268 @@
+/* Cuerpo de página ----------*/
+
+section{
+	height: auto;
+}
+
+/*Formulario ----------------- */
+
+#Contendor-contacto{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.Contacto{
+	width: 70%;
+}
+
+form {
+	width: 90%;
+	float: left;
+	margin: 30px auto;
+	background-color: #E7E8E0;
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+
+.formulario{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding: 10px 20px;
+}
+
+.formulario_label{
+	display: block;
+	font-weight: 700px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario_grupo-input{
+	position: relative;
+}
+
+.formulario_input{
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 30px 0 10px;
+	transition: .3s ease all;
+	box-sizing: border-box;
+}
+
+.formulario_input:focus{
+	border: 3px solid #304EFF;
+	outline: none;
+}
+
+.formulario_input-error{
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0;
+	color:  #b6160b;
+	display: none;
+}
+
+.formulario_input-error-activo{
+	display: block;
+}
+
+.formulario_validacion-estado{
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario_mensaje, .formulario_grupo-btn-enviar{
+	grid-column: span 2;
+}
+
+#formulario_consulta{
+	grid-column: span 2;
+}
+
+textarea{
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	line-height: 45px;
+	padding: 0 10px 0 10px;
+	transition: .3s ease all;
+	resize: vertical;
+	max-height: 250px;
+	min-height: 100px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+textarea:focus{
+	border: 3px solid #304EFF;
+	outline: none;
+}
+
+.formulario_mensaje{
+	height: 45px;
+	line-height: 45px;
+	background: #F66068;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario_mensaje p{
+	font-size: 14px;
+	text-align: center;
+}
+
+.formulario_mensaje-activo{
+	display: block;
+}
+
+.formulario_mensaje p{
+	margin: 0;
+}
+
+.formulario_grupo-btn-enviar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario_btn{
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #2C83E0;
+	color: #FFFBF2;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario_btn:hover{
+	background: #114175;
+}
+
+.formulario_mensaje-exito{
+	font-size: 14px;
+	color: #24C41E;
+	display: none;
+	font-weight: bold;
+}
+
+.formulario_mensaje-exito-activo{
+	display: block;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario_grupo-correcto .formulario_validacion-estado{
+	color: #24C41E;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label{
+	color: #b6160b;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+	color: #b6160b;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input{
+	border: 3px solid #b6160b;
+}
+
+/*MEDIA----------------------------------------*/
+/* MEDIA 600 a 1024px*/
+
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+header, section, footer {
+	width: 580px;
+}
+
+/* Cuerpo de página ----------*/
+
+section{
+	padding-bottom: 10px;
+	height: auto;
+}
+
+/*Formulario ----------------- */
+
+form {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.formulario{
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+}  /* FIN de MEDIA 600 a 1024px ---------------------*/
+
+
+@media all and (max-width: 599px) {
+
+header{
+	height: auto;
+}
+
+/* Cuerpo de página ----------*/
+
+section{
+	height: auto;
+}
+
+/*Formulario ----------------- */
+
+.contacto{
+	width: 100%;
+}
+
+form {
+	width: 90%;
+	max-width: 400px;
+	padding: 0px;
+	margin: 20px 5%;
+}
+
+.formulario{
+	grid-template-columns: 1fr;
+	grid-column: 2;
+	grid-gap: 0;
+	padding: 0px;
+}
+
+.formulario_grupo{
+	grid-column: 1;
+}
+
+.formulario_mensaje p{
+	font-size: 9px;
+}
+
+.formulario_input{
+	box-sizing: border-box;
+}
+
+}  /* FIN de MEDIA 599px ---------------------*/

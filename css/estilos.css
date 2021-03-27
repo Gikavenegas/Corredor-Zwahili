@@ -1,0 +1,565 @@
+*{
+ font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+    box-shadow:	inset 0 0 0 2px rgb(255,255,255),
+	3px 3px 1px rgba(0,0,0,0.3);
+}
+
+section{
+    width: 90%;
+    margin-right: auto;
+	margin-left: auto;
+    box-shadow:	inset 0 0 0 2px rgb(255,255,255),
+	3px 0px 1px rgba(0,0,0,0.3);
+}
+
+/* -------------- HEADER ----------- */
+header{
+    background-color: rgb(252, 252, 252);
+}
+
+#Redes_header {
+    height: 60px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#Redes_header li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#Redes_header li i{
+    padding-right: 8px;
+    color: #434240;
+}
+
+#Redes_header li a{
+    text-decoration: none;
+    color: #505050;
+}
+
+#Redes_header li a:hover{
+    font-weight: bold;
+}
+
+#Contenedor_menu-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Boton-principal {
+    height: 20px;
+    margin: 8px 20px;
+    padding: 10px 5px;
+    text-align: center;
+    flex: 1 1 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+#Boton-principal a{
+    font-size: 18px;
+}
+
+/*----Para añadir la línea inferior del botón*/
+
+#Boton-principal:after{
+    content: "";
+    width:0;
+    height:3px;
+    background: #646362;
+    display: block;
+    transition: all .9s;
+    position: relative;
+}   
+
+#Boton-principal:hover:after{
+    width: 100%;
+    cursor: pointer;
+}
+
+/*----Fin de la linea inferior del boton*/
+
+
+#Contenedor_menu-principal a, i {
+    text-decoration: none;
+    color: #646362;
+}
+
+/* -------------- SECTION ----------- */
+
+#Logo-principal {
+    position: relative;
+}
+
+#Imagen-principal img{
+    width: 100%;
+    position: relative;
+}
+
+#Texto-principal{
+    background-color: rgba(241, 26, 1, 0.5);
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+}
+
+#Texto-principal h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#Texto-principal h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#Texto-principal p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*-----BANNER IMAGENES------*/
+
+#Menu-imagenes{
+    padding: 30px 0;
+    height: auto;
+}
+
+#Contenedor_menu-imagenes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#Contenedor_menu-imagenes p {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#Card {
+    margin: 0 12px;
+    box-shadow: 5px 5px 10px rgb(112, 112, 112, 0.5);
+}
+
+.Card-imagen{
+    width: 100%;
+}
+
+#btn-card{
+    text-align: center;
+    height: 30px;
+    padding-top: 10px; 
+}
+
+#btn-card:hover{
+    background-color: #EEEDDA ;
+    cursor: pointer;
+}
+
+#btn-card a{
+    text-decoration: none;
+    color: #0E150E;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#btn-card a:hover{
+    cursor: pointer;
+    color: #2F462F;
+}
+
+/*----- FOOTER ------- */
+
+#Contenedor-Footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#google-map {
+    text-align: center;
+}
+
+#google-map img{
+    width: 450px;
+    margin-top: 5px;
+}
+
+#Datos-contacto h2{
+    color: #434240;
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+#Datos-contacto h3{
+    color: #506550;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+#Datos-contacto h3 i{
+    color: #798b79;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#Datos-contacto li{
+    list-style: none;
+    font-size: 15px;
+    color: #434240;
+}
+
+#Footer-Redes {
+    height: 70px;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:  #0E150E;
+}
+
+#Footer-Redes li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+#Footer-Redes li i{
+    padding-right: 8px;
+    color: #E7FDE7;
+}
+
+#Footer-Redes li a{
+    text-decoration: none;
+    color: #E7FDE7;
+}
+
+#Footer-Redes li a:hover{
+    font-weight: bold;
+}
+
+#Footer-copy{
+    background-color: #0E150E;
+    margin-top: 0;
+    padding: 10px 10px;
+    height: 20px;
+    color: #E7FDE7;
+    text-align: center;
+}
+
+#Footer-copy p{
+    margin: 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/*MEDIA----------------------------------------*/
+/* MEDIA 600 a 1024px*/
+
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+    /* -------------- HEADER ----------- */
+        
+    #Redes_header {
+        height: 40px;
+    }
+     
+    #Redes_header li i{
+        font-size: 13px;
+    }
+    
+    #Redes_header li a{
+        font-size: 13px;
+    }
+    
+    #Contenedor_menu-principal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #Boton-principal {
+        width: auto;
+        padding: 10px 10px;
+        font-size: 17px;
+        margin: 8px 5px;
+    }
+        
+    /* -------------- SECTION ----------- */
+        
+    #Texto-principal{
+        top: 15%;
+    }
+    
+    #Texto-principal h1{
+        font-size: 50px;
+        margin: 15px 0;
+    }
+    
+    #Texto-principal h3{
+        font-size: 30px;
+    }
+    
+    #Texto-principal p{
+        font-size: 15px;
+    }
+    
+    /*-----BANNER IMAGENES------*/
+    
+    #Menu-imagenes{
+        padding: 10px 0;
+    }
+    
+    #Contenedor_menu-imagenes {
+        margin-top: 20px;
+    }
+      
+    /*----- FOOTER ------- */
+    
+    #Contenedor-Footer{
+        grid-template-columns: 40% 60%;
+        grid-gap: 20px;
+        padding: 15px 20px;
+    }
+      
+    #google-map img{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #Datos-contacto{
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+
+    #Datos-contacto h2{
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    
+    #Datos-contacto h3{
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    
+    #Datos-contacto h3 i{
+        font-size: 17px;
+    }
+            
+    #Footer-Redes {
+        height: 50px;
+    }
+
+    #Footer-Redes li a{
+        font-size: 15px;
+    }
+    
+    #Footer-Redes li i{
+        padding-right: 8px;
+        font-size: 15px;
+    }
+         
+    #Footer-copy p{
+        font-size: 12px;
+    }
+
+}  /* FIN de MEDIA 600 a 1024px ---------------------*/
+
+
+@media all and (max-width: 599px) {
+     
+    /* -------------- HEADER ----------- */
+    
+    #Redes_header {
+        height: auto;
+        padding: 12px 17px;
+    }
+    
+    #Redes_header li {
+        padding-left: 8px;
+    }
+    
+    #Redes_header li i, #Redes_header li a{
+        font-size: 11px;
+    }
+       
+    #Contenedor_menu-principal {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #Boton-principal {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0px;
+        font-size: 18px;
+    }
+    
+    #Boton-principal a{
+        font-size: 20px;
+    }
+    
+    #Boton-principal:after{
+        position: absolute;
+        left: 50%;
+        top: 40px;
+    }   
+    
+    #Boton-principal:hover:after{
+        left: 0;    
+    }
+    
+    
+    /* -------------- SECTION ----------- */
+    
+    #Logo-principal {
+        position: relative;
+    }
+    
+    #Imagen-principal img{
+        position: relative;
+    }
+    
+    #Texto-principal{
+        position: absolute;
+        top: 15%;
+        bottom: 15%;
+        height: auto;
+    }
+    
+    #Texto-principal h1{
+        font-size: 30px;
+        margin: auto 0;
+        padding: 0 7%;
+    }
+    
+    #Texto-principal h3{
+        font-size: 23px;
+        margin: auto 0;
+    }
+    
+    #Texto-principal p{
+        font-size: 12px;
+        margin: auto 0;
+        padding: 0 3%;
+    }
+    
+    /*-----BANNER IMAGENES------*/
+    
+    #Menu-imagenes{
+        padding: 10px 0;
+    }
+    
+    #Contenedor_menu-imagenes {
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+        grid-gap: none;
+    }
+    
+    .Card-imagen{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    /*----- FOOTER ------- */
+    
+    #Contenedor-Footer{
+        grid-template-columns: 1fr;
+        padding: 15px 20px;
+    }
+    
+    #google-map {
+        text-align: center;
+    }
+    
+    #google-map img{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #Datos-contacto{
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    #Datos-contacto h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    #Datos-contacto h3{
+        text-align: center;
+    }
+    
+    #Datos-contacto h3 i{
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    
+    #Datos-contacto li{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    #Footer-Redes {
+        height: auto;
+        padding: 20px;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    
+    #Footer-Redes li {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    
+    #Footer-Redes li i{
+        padding-right: 8px;
+        font-size: 13px;
+    }
+    
+    #Footer-Redes li a{
+        font-size: 13px;
+    }
+    
+    #Footer-copy{
+        height: auto;
+    }
+    
+    #Footer-copy p{
+        font-size: 9px;
+    }
+
+}  /* FIN de MEDIA 599px ---------------------*/

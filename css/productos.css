@@ -1,0 +1,150 @@
+#Contenedor-productos{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 15px;
+}
+
+#Menu-lateral{
+    background-color: #F5F3FA;
+    padding-left: 20px;
+    margin-top: 4px;
+}
+
+#Menu-lateral h2{
+    font-size: 20px;
+}
+
+#Menu-lateral p{
+    font-size: 15px;
+}
+
+#Productos-catalogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 15px;
+    grid-gap: 10px;
+}
+
+#producto-CD, #producto-RD, #producto-CZ, #producto-IP{
+    text-align: center;
+    border: 2px dotted;
+    border-color: #434240;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+
+.imagen-producto{
+    height: 150px;
+}
+
+#Nombre-tela {
+    margin: 5px 0;
+}
+
+#Nombre-tela p{
+    font-weight: bold;
+    color: #1A0966;
+    margin: 0;
+}
+
+#producto-info{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 0px 7px;
+}
+#info-text {
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
+
+#info-num{
+    text-align: right;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 5px 5px;
+
+}
+
+#precio{
+    text-align: right;
+    font-weight: bold;
+    padding: 5px 5px;
+    font-size: 15px;
+    margin: 10px 0px;
+    background-color: #E7E8E0;
+}
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+    #Contenedor-productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        width: 100%;
+    }
+    
+    #Menu-lateral{
+        height: auto;
+    }
+    
+    #Productos-catalogo{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+            
+    #producto-info{
+        padding: 0px 7px;
+        grid-gap: 10px;
+    }
+    #info-text {
+        font-size: 14px;
+    }
+    
+    #info-num{
+        font-size: 14px;
+    }
+    
+    #precio{
+        font-size: 15px;
+        margin: 10px 0px;
+    }    
+
+}  /* FIN de MEDIA 600 a 1024px ---------------------*/
+
+
+@media all and (max-width: 599px) {
+
+    #Contenedor-productos{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    
+    #Menu-lateral{
+        height: auto;
+    }
+    
+    #Productos-catalogo{
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+            
+    #info-text {
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+    
+    #info-num{
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+    
+    #precio{
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+    
+}  /* FIN de MEDIA 599px ---------------------*/
