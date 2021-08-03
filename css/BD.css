@@ -1,0 +1,29 @@
+.row{
+    margin-bottom: 20px;
+}
+
+.fa-pencil-alt {
+    color: #ED9E00;
+}
+
+.fa-trash-alt{
+    color: #ED1600;
+}
+
+.btn-success{
+    background-color: #0e9209 !important;
+}
+
+.row h3{
+    margin-bottom: 30px;
+}
+
+.row h5{
+    margin-bottom: 20px;
+}
+
+
+.row h6{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}

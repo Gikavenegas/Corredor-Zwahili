@@ -3,7 +3,7 @@
 }
 
 header, footer {
-    width: 90%;
+    width: 100%;
 	margin-right: auto;
 	margin-left: auto;
     box-shadow:	inset 0 0 0 2px rgb(255,255,255),
@@ -11,7 +11,6 @@ header, footer {
 }
 
 section{
-    width: 90%;
     margin-right: auto;
 	margin-left: auto;
     box-shadow:	inset 0 0 0 2px rgb(255,255,255),
@@ -23,42 +22,49 @@ header{
     background-color: rgb(252, 252, 252);
 }
 
-#Redes_header {
+.container-iconos_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.Redes_header, .inicioSesion_header, .cerrarSesion_header{
     height: 60px;
     padding: 15px 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
-#Redes_header li {
+.Redes_header li, .inicioSesion_header li, .cerrarSesion_header li {
     list-style: none;
     display: inline-block;
     padding-left: 10px;
 }
 
-#Redes_header li i{
+.Redes_header li i, .inicioSesion_header li i, .cerrarSesion_header li i{
     padding-right: 8px;
     color: #434240;
 }
 
-#Redes_header li a{
+.Redes_header li a, .inicioSesion_header li a, .cerrarSesion_header li a{
     text-decoration: none;
     color: #505050;
 }
 
-#Redes_header li a:hover{
+.Redes_header li a:hover, .inicioSesion_header li a:hover{
     font-weight: bold;
 }
 
-#Contenedor_menu-principal {
+.Contenedor_menu-principal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#Boton-principal {
+.Boton-principal {
     height: 20px;
     margin: 8px 20px;
     padding: 10px 5px;
@@ -68,13 +74,13 @@ header{
     cursor: pointer;
 }
 
-#Boton-principal a{
+.Boton-principal a{
     font-size: 18px;
 }
 
 /*----Para añadir la línea inferior del botón*/
 
-#Boton-principal:after{
+.Boton-principal:after{
     content: "";
     width:0;
     height:3px;
@@ -84,7 +90,7 @@ header{
     position: relative;
 }   
 
-#Boton-principal:hover:after{
+.Boton-principal:hover:after{
     width: 100%;
     cursor: pointer;
 }
@@ -92,7 +98,7 @@ header{
 /*----Fin de la linea inferior del boton*/
 
 
-#Contenedor_menu-principal a, i {
+.Contenedor_menu-principal a, i {
     text-decoration: none;
     color: #646362;
 }
@@ -196,12 +202,9 @@ header{
     margin-bottom: 20px;
 }
 
-#google-map {
-    text-align: center;
-}
-
-#google-map img{
-    width: 450px;
+#google-map iframe{
+    width: 100%;
+    height: 350px;
     margin-top: 5px;
 }
 
@@ -347,8 +350,8 @@ header{
         padding: 15px 20px;
     }
       
-    #google-map img{
-        width: 100%;
+    #google-map iframe{
+        height: 250px;
         margin-top: 5px;
     }
 
@@ -497,13 +500,9 @@ header{
         grid-template-columns: 1fr;
         padding: 15px 20px;
     }
-    
-    #google-map {
-        text-align: center;
-    }
-    
-    #google-map img{
-        width: 100%;
+        
+    #google-map iframe{
+        height: 200px;
         margin-top: 0;
     }
 

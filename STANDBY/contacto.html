@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Empresa de venta y compra de tela y saldos">
+        <meta name="keywords" content="Tela, saldos, rollos, compra, venta">
+        <meta name="author" content="Corredor Zwahili">
+		
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/contacto.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/eb3ade45b8.js" crossorigin="anonymous"></script>
+
+	<title>Contacto</title>
+	</head>
+
+<body>
+
+    <header>
+        <div class="container-iconos_header">
+            <div class="Redes_header">
+                <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/corredor_zwahili-102185001140136/" target="_blank">Facebook</a></li>
+                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/corredor_zwahili/?hl=es-la" target="_blank">Instagram</a></li>
+                <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/message/3SPCV7HWP227H1" target="_blank">WhatsApp</a></li>
+            </div>
+            <div class="inicioSesion_header">
+                <li><i class="far fa-user"></i><a href="sesion.php">Iniciar sesión / Crear usuario</a></li>
+            </div>    
+        </div>
+
+        <div class="Contenedor_menu-principal">
+            <nav class="Contenedor_menu-principal">
+                <div class="Boton-principal"><a href="index.html">Inicio</a></div>
+                <div class="Boton-principal"><a href="promociones.html">Promociones</a></div>
+                <div class="Boton-principal"><a href="productos.html">Productos</a></div>
+                <div class="Boton-principal"><a href="contacto.html">Contacto</a></div>
+                <div class="Boton-principal"><a href="shop.html"><i class="fas fa-shopping-cart"></i></a></div>
+            </nav>    
+        </div>
+    </header>
+
+	<main>
+		<section>
+			<div id="Contendor-contacto">
+				<div class="Contacto">
+					<form method="POST" action="#" class="formulario" id="formulario">
+					<!-- Grupo nombre -->
+						<div class="formulario_grupo" id="grupo_nombre">
+							<label for="nombre" class="formulario_label"> <b>Nombre(s)</b></label>
+							<div class="formulario_grupo-input">
+								<input type="text" class="formulario_input" name="nombre" placeholder="Escriba su nombre"></label>
+							<i class="formulario_validacion-estado far fa-times-circle"></i>
+							</div>		
+							<p class="formulario_input-error">Escriba su nombre</p>
+						</div>
+	
+					<!-- Grupo apellido -->
+					<div class="formulario_grupo" id="grupo_apellido">
+						<label for="apellido" class="formulario_label"> <b>Apellido(s)</b></label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario_input" name="apellido" placeholder="Escriba su apellido"></label>
+							<i class="formulario_validacion-estado far fa-times-circle"></i>
+						</div>		
+						<p class="formulario_input-error">Escriba su apellido</p>
+					</div>
+	
+					<!-- Grupo email -->
+					<div class="formulario_grupo" id="grupo_correo">
+						<label for="correo" class="formulario_label"> <b>Correo electrónico</b></label>
+						<div class="formulario_grupo-input">
+							<input type="email" class="formulario_input" name="correo"></label>
+							<i class="formulario_validacion-estado far fa-times-circle"></i>
+						</div>		
+						<p class="formulario_input-error">Escriba su correo electrónico</p>
+					</div>
+	
+					<!-- Grupo celular -->
+					<div class="formulario_grupo" id="grupo_celular">
+						<label for="celular" class="formulario_label"><b>Celular</b></label>
+						<div class="formulario_grupo-input">
+							<input type="text" class="formulario_input" name="celular"></label>
+							<i class="formulario_validacion-estado far fa-times-circle"></i>
+						</div>		
+						<p class="formulario_input-error">Escriba su número de celular</p>
+					</div>
+	
+					<!-- Grupo consulta -->
+					<div class="formulario_grupo" id="formulario_consulta">
+						<label for="consulta" class="formulario_label"><b>Consulta</b></label>
+						<div class="formulario_grupo-input">
+							<textarea name="consulta" rows="10" class="formulario_textarea"></textarea></label>
+							<i class="formulario_validacion-estado"></i>
+						</div>
+						<p class="formulario_input-error">Escriba su consulta</p>
+					</div>
+	
+					<div class="formulario_mensaje" id="formulario_mensaje">
+						<p><i class="fas fa-exclamation-triangle"></i> Error: debe completar todos los datos para enviar la consulta.</p>
+					</div>
+	
+					<div class="formulario_grupo formulario_grupo-btn-enviar">
+						<button type="submit" class="formulario_btn">Enviar</button>
+						<p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Se ha enviado su consulta. Nos contactaremos lo más pronto posible.</p>
+					</div>
+				</form>
+				</div>
+			</div>
+		</section>
+	
+
+	</main>
+
+    <!--Footer-->
+    <footer>
+        <div id="Contenedor-Footer">
+            <div id="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2196820340164!2d-58.50557748476972!3d-34.62388838045427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9cddc33dd63%3A0x7e4a96bee76a5e8b!2sJuan%20Agust%C3%ADn%20Garc%C3%ADa%204993%2C%20C1407%20FXG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1618354633487!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="Footer-columna1">
+                <ul id="Datos-contacto">
+                    <h2>Contacto</h2>
+                    <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                    <li>Juan Agustín García 4993, C1407 FXG, Buenos Aires (CABA)</li>
+                    <h3><i class="fas fa-phone-alt"></i> Teléfono</h3>
+                    <li>(+57) 011 3939-2767</li>
+                    <h3><i class="far fa-envelope"></i> E-mail</h3>
+                    <li>jonas_2105@hotmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div id="Footer-Redes">
+            <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/corredor_zwahili-102185001140136/" target="_blank">Facebook</a>
+            </li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/corredor_zwahili/?hl=es-la" target="_blank">Instagram</a>
+            </li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/message/3SPCV7HWP227H1" target="_blank">WhatsApp</a>
+            </li>   
+        </div>
+        <div id="Footer-copy">
+            <p>Copyright - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/contacto.js"></script>
+	<script src="https://kit.fontawesome.com/eb3ade45b8.js" crossorigin="anonymous"></script>
+</body>
+</html>
